@@ -5,5 +5,5 @@ print("first")
 print("second")
 print("third")
 
-print("Hello, \"world"\)
+print("Hello, \"world\"")
 # we can also use single quotes in python
