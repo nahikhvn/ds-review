@@ -41,5 +41,6 @@ def remove_fourth_character(word: str) -> str:
     second_half = word[4:]
     return first_half + second_half
 
+# f string formatting
 def say_goodbye(name: str, hour: int) -> str:
     return f"Goodbye, {name}. See you again at {hour} o'clock."
