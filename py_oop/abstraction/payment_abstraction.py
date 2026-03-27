@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class PaymentCard():
+class PaymentCard(ABC):
     def __init__(self, card_number: str, balance: float):
         self.card_number = card_number
         self.balance = balance
