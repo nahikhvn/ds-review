@@ -1,0 +1,23 @@
+class BankAccount: 
+    # TODO: Add class and instance attributes at their appropriate places
+    
+    total_accounts = 0
+    total_balance = 0
+
+    def __init__(self, name: str, balance: float) -> None:
+        self.name = name
+        self.balance = balance
+        BankAccount.total_accounts += 1
+        BankAccount.total_balance += balance
+
+
+# TODO: Create two accounts
+alice = BankAccount("Alice", 1000) # this is just BankAccount.__init__(alice, name, balance), __init__ is passed the BankAccount obj from __new__ 
+bob = BankAccount("Bob", 2000)
+
+# TODO: Print the information using the mentioned format
+print(f"{alice.name}'s balance: ${alice.balance}")
+print(f"{bob.name}'s balance: ${bob.balance}")
+print(f"Total Accounts: {BankAccount.total_accounts}")
+print(f"Total Balance: ${BankAccount.total_balance}")
+
